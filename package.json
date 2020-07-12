@@ -1,0 +1,23 @@
+{
+  "name": "sudh-protfolio",
+  "version": "1.0.0",
+  "description": "Portfolio in reactJs",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./public/index.html",
+    "buildcss": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "author": "sudesh-bhat",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scroll": "^1.7.16",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

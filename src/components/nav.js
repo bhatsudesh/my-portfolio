@@ -7,7 +7,7 @@ export default function Navbar() {
         <header className="fixed top-0 lg:px-48 px-3 flex flex-wrap items-center shadow-lg text-white py-4 w-full" style={{ backgroundColor: "#621CC8" }}>
             <div className="flex-1 flex justify-between items-center">
                 <div className="font-bold lg:text-lg text-base hover:text-yellow-400 cursor-pointer" onClick={() =>
-                    scroll.scrollToTop()}> {/*logo*/}
+                    (scroll.scrollToTop())}> {/*logo*/}
                             PORTFOLIO
                         </div>
             </div>
@@ -24,19 +24,19 @@ export default function Navbar() {
                 <nav>
                     <ul className="lg:flex items-center justify-between font-medium text-gray-300 text-base pt-4 lg:pt-0">
                         <li className="lg:px-5 hover:text-yellow-400 active:text-yellow-400 lg:py-0 py-2">
-                            <Link to="experience" className="cursor-pointer" smooth={true} duration={1000}>EXPERIENCE</Link>
+                            <Link to="experience" className="cursor-pointer" smooth={true} duration={1000} onClick={() => setNavbarOpen(!navbarOpen)}>EXPERIENCE</Link>
                         </li>
                         <li className="lg:px-5 hover:text-yellow-400 lg:py-0 py-2">
-                            <Link to="education" className="cursor-pointer" smooth={true} duration={1000}>EDUCATION</Link>
+                            <Link to="education" className="cursor-pointer" smooth={true} duration={1000} onClick={() => setNavbarOpen(!navbarOpen)}>EDUCATION</Link>
                         </li>
                         <li className="lg:px-5 hover:text-yellow-400 lg:py-0 py-2">
-                            <Link to="skill" className="cursor-pointer" smooth={true} duration={1000}>SKILLS</Link>
+                            <Link to="skill" className="cursor-pointer" smooth={true} duration={1000} onClick={() => setNavbarOpen(!navbarOpen)}>SKILLS</Link>
                         </li>
                         <li className="lg:px-5 hover:text-yellow-400 lg:py-0 py-2">
-                            <Link to="project" className="cursor-pointer" smooth={true} duration={1000}>PROJECTS</Link>
+                            <Link to="project" className="cursor-pointer" smooth={true} duration={1000} onClick={() => setNavbarOpen(!navbarOpen)}>PROJECTS</Link>
                         </li>
                         <li className="lg:pl-5 hover:text-yellow-400 lg:py-0 py-2">
-                            <Link to="contact" className="cursor-pointer" smooth={true} duration={1000}>CONTACT</Link>
+                            <Link to="contact" className="cursor-pointer" smooth={true} duration={1000} onClick={() => setNavbarOpen(!navbarOpen)}>CONTACT</Link>
                         </li>
                     </ul>
                 </nav>
